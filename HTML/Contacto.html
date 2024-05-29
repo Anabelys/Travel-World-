@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto- Travel World</title>
+    <link rel="shortcut icon" href="../imagenes/senderismo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../CSS/normalize.css">
+   <link rel="stylesheet" href="../CSS/contacto.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+   
+
+</head>
+<body>
+  
+    <header class="encabezado">
+        <div class="contenedor-navegacion ">
+            <div class="contenido-navegacion contenedor">
+                <div class="header_logo" id="main-logo">
+                    <a href="../index.html"><img src="../imagenes/senderismo.png" width="100" height="100" alt="logo">
+                    </a>
+                  </div>
+                <div class="logo">
+                    <h2> <span class="verde">TRAVEL</span> <span class="rojo">WORLD</span></h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../HTML/Destino.html">Destinos</a>
+                    <a href="../HTML/Sobre_Nosotros.html">Sobre Nosotros</a>
+                    <a href="../HTML/Contacto.html">Contacto</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+                <div class="encuentra-tu-destino">
+                    <h2>Encuentra tu Destino</h2>
+                    <p>Travel World tiene una amplia selección viajes y aventuras para ti.</p>
+                    <button class="todos btn btn-verde" onclick="location.href='../HTML/Destino.html';">Explora nuestros Destinos</button>
+
+
+                    <div class="contenido-separador contenedor">
+                        <h3>Mapa de contacto</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.151814330779!2d-58.4115666!3d-34.575025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb570cb9bdc01%3A0x21ac8a8d0e574bea!2sPlaza%20Sicilia!5e0!3m2!1ses!2snl!4v1716650706657!5m2!1ses!2snl"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                    </div>
+                </div>
+        </section>
+        <section class="formulario">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm">
+                 <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div>
+                    <label for="motivo">Destino que deseas ir:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Seleccionar el destino</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Canaima">Canaima</option>
+                        <option value="Calafate">El Calafate</option>
+                        <option value="Iguazu">Iguazu</option>
+                    </select>
+                </div>
+                <div class="Preferencias-contacto">
+                    <label>Preferencias de contacto:</label>
+                    <div class="opciones-contacto">
+                    <input type="checkbox" id="prefEmail" name="prefContacto" value="email">
+                    <label for="prefEmail">Email</label>
+                    <input type="checkbox" id="prefTelefono" name="prefContacto" value="telefono">
+                    <label for="prefTelefono">Teléfono</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div>
+                    <label for="imagen">Adjuntar imagen:</label>
+                    <input type="file" id="imagen" name="imagen">
+                </div>
+                <div class="botones">
+                    <input class="button" type="reset" value="Limpiar formulario">
+                    <input class="button" type="submit" value="Enviar">
+                </div>
+            </form>
+        
+            <div id="thankYouMessage" style="display:none;">
+                <p>Muchas gracias. En breves minutos nos colocaremos en contacto con usted.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p><i class="fas fa-map-marker-alt"></i>  Av. del Libertador, Av. Casares y, Buenos Aires, Argentina</p>
+                <p><i class="fas fa-map-marker-alt"></i>    34. Caracas-Venezuela 1080</p>
+
+            </div>
+            
+            <div class="info">
+                <h3>Número de  contacto</h3>
+                <i class="fa-solid fa-mobile-retro"> +54 11 70 53 90 02</i>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Lunes - Viernes 8am - 5pm</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>Todos los derechos reservados; 2024 Travel World, desarrollado por Anabelys Molina (grupo 14)</p>
+    </footer>
+
+   
+   <script src="../JS/contacto.js"></script> 
+</body>
+</html>

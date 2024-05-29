@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel World</title>
+    <link rel="shortcut icon" href="imagenes/senderismo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  
+    <header class="encabezado">
+        <div class="contenedor-navegacion ">
+            <div class="contenido-navegacion contenedor">
+                <div class="header_logo">
+                    <a href="index.html"><img src="imagenes/senderismo.png" width="100" height="100" alt="logo"></a>
+                  </div>
+                <div class="logo">
+                    <h2> <span class="verde">TRAVEL</span> <span class="rojo">WORLD</span></h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="index.html">Inicio</a>
+                    <a href="HTML/Destino.html">Destinos</a>
+                    <a href="HTML/Sobre_Nosotros.html"> Sobre Nosotros</a>
+                    <a href="HTML/Contacto.html"> Contacto</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <div class="contenido-header">
+            <div class="contenedor-encabezado">
+                <div class="texto-encabezado">
+                    <h2>¡Bienvenidos!</h2>
+                    <a href="HTML/Sobre_Nosotros.html" class="btn bordes">Nosotros</a>
+                </div>
+                <video autoplay loop muted>
+                    <source src="video/roraima.mp4" >
+                </video>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="contenedor-nosotros contenedor">
+                <div class="texto-nosotros">
+                        <h1 class="descubre">Descubre Travel World!</h1>
+                    
+                    <h2>La Lida Es Un Viaje Y Quien Viaja Vive 2 Veces</h2>
+                    <p>Viajar es descubrir el mundo y a nosotros mismos, explorando paisajes y culturas únicas.</p> 
+                    <p> Es un acto de amor hacia la diversidad y las personas que encontramos en el camino. La felicidad surge de los pequeños momentos de asombro y alegría que solo el viaje puede ofrecer. <br>
+                    <p>En definitiva, la vida es un viaje, una aventura llena de experiencias valiosas que nos enseñan a vivir con pasión, curiosidad y gratitud.  </p>
+                    <a href="HTML/Contacto.html" class="btn btn-rojo">Contactanos</a>
+                </div>
+                <div class="imagenes-nosotros">
+                    <div class="imagen1">
+                        <img src="imagenes/saltoangel.jpg" alt="salto angel">
+                    </div>
+
+                    <div class="imagenes2">
+                        <img src="imagenes/calafate3.jpeg" alt="calafate" height="200">
+                        <img src="imagenes/comida.jpeg" alt="tepuy" height="200">
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section class="destinos-contenedor">
+            <h2 class="texto-destinos">Destinos</h2>
+            <div class="botones-destinos">
+                <button class="todos btn btn-verde">Todos</button>
+                <button class="canaimas btn btn-verde">Canaima</button>
+                <button class="calafate btn btn-verde">El Calafate</button>
+                <button class="amazona btn btn-verde">Amazonas</button>
+                <button class="iguazus btn btn-verde">Cataratas de Iguazú</button>
+            </div>
+
+            <div class="destinos">
+                <div class="destino" data-destino="canaima">
+                    <img src="imagenes/roraima2.webp" width="450" height="350"  alt="Roraima">
+                    <h2>Roraima</h2>
+                    <p>El monte Roraima es la única montaña del planeta que, con un área de 30 km2, no tiene un pico como tal en su cumbre. Su cima es completamente horizontal y está rodeada de enormes acantilados, cascadas y otros accidentes geográficos poco comunes en el mundo</p>
+                    <a href="HTML/Canaima.html" class="btn btn-rojo">Destino Canaima</a>
+                </div>
+                <div class="destino" data-destino="canaima">
+                    <img src="imagenes/saltoangel2.jpg" width="450" height="350" alt="Salto angel">
+                    <h2>Salto Angel</h2>
+                    <p>El Kerepakupai Vená o Salto Ángel (Kerepakupai Vená en pemón, que significa “salto del lugar más profundo”). Es la cascada más alta del mundo, con una altura de 979 m (807 m de caída ininterrumpida).</p>
+                    <a href="HTML/Canaima.html" class="btn btn-rojo">Destino Canaima</a>
+                </div>
+                <div class="destino" data-destino="canaima">
+                    <img src="imagenes/Roraima1.jpg" width="450" height="350"  alt="Jacuzzi">
+                    <h2>Jacuzzi</h2>
+                    <p>Piscinas naturales circulares con miles de cuarzos en el fondo que se encuentran en el Monte Roraima en el Sector Oriental del Parque Nacional Canaima en Venezuela </p>
+                    <a href="HTML/Canaima.html" class="btn btn-rojo">Destino Canaima</a>
+                </div>
+
+                <div class="destino" data-destino="calafate">
+                    <img src="imagenes/calafate3.jpeg" width="450" height="350" alt="el calafate">
+                    <h2>Calafate</h2>
+                    <p>El Calafate deriva su nombre del Berberis microphylla, de flores amarillas característico del sur de la Patagonia, </p>
+                    <a href="HTML/calafate.html" class="btn btn-rojo">Destino Calafate</a>
+                </div>
+
+                <div class="destino" data-destino="calafate">
+                    <img src="imagenes/calafate2.jpeg"  width="450" height="350" alt="recorridos">
+                    <h2>Pasarelas del Glaciar Perito Moreno</h2>
+                    <p>Disfruta del frontal del Glaciar Perito Moreno desde las pasarelas instaladas frente a este inmenso monstruo de hielo.</p>
+                    <a href="HTML/calafate.html" class="btn btn-rojo">Destino Calafate</a>
+                </div>
+
+                <div class="destino" data-destino="calafate">
+                    <img src="imagenes/calafate1.jpeg" width="450" height="350" alt="Glaciar perito moreno">
+                    <h2>Glaciar Perito Moreno</h2>
+                    <p>Este glaciar se origina en el campo de hielo Patagónico Sur teniendo parte de su origen en la región de Magallanes y de la Antártica Chilena</p>
+                    <a href="HTML/calafate.html" class="btn btn-rojo">Destino Calafate</a>
+                </div>
+
+                <div class="destino" data-destino="amazona">
+                    <img src="imagenes/Amazonas-Lago_Leopoldo.jpg"  width="450" height="350" alt="lago leopoldo">
+                    <h2>Lago Leopoldo</h2>
+                    <p>El Lago Leopoldo es un cuerpo de agua ubicado en la Amazonía venezolana en la zona más occidental del Escudo Guayanés.</p>
+                    <a href="HTML/amazonas.html" class="btn btn-rojo">Destino Amazonas</a>
+                </div>
+
+                <div class="destino" data-destino="amazona">
+                    <img src="imagenes/Chaman_amazonie.jpg" alt="chaman" width="450" height="350">
+                    <h2>Chaman</h2>
+                    <p>El chamán es especialista en lo sagrado y dotado de ciertos dones y condiciones especiales, hace de puente entre el mundo real y el mundo invisible.</p>
+                    <a href="HTML/amazonas.html" class="btn btn-rojo">Destino Amazonas</a>
+                </div>
+
+                <div class="destino" data-destino="amazona">
+                    <img src="imagenes/Cerro-autana+amazonas+venezuela.jpg" width="450" height="350" alt="Cerro Autana">
+                    <h2>Cerro Autana</h2>
+                    <p>El cerro Autana (Wahari - Kuawai) simboliza el "árbol de la vida" en la historia oral y tradición de los indígenas Piaroa que habitan la región.</p>
+                    <a href="HTML/amazonas.html" class="btn btn-rojo">Destino Amazonas</a>
+                </div>
+
+                <div class="destino" data-destino="iguazu">
+                    <img src="imagenes/iguazu.jpg" width="450" height="350"  alt="Triple frontera">
+                    <h2>Triple Frontera</h2>
+                    <p>La Triple Frontera es un conocido trifinio internacional situado en el cruce de fronteras entre Argentina, Brasil y Paraguay, cerca de las famosas cataratas del Iguazú.</p>
+                    <a href="HTML/iguazu.html" class="btn btn-rojo">Destino Iguazú</a>
+                </div>
+
+                <div class="destino" data-destino="iguazu">
+                    <img src="imagenes/iguazu1.jpg" width="450" height="350" alt="Recorridos">
+                    <h2>Recorridos</h2>
+                    <p>Recorrido de un día por las Cataratas del Iguazú con paseo en barco entre las cascadas.</p>
+                    <a href="HTML/iguazu.html" class="btn btn-rojo">Destino Iguazú</a>
+                </div>
+
+                <div class="destino" data-destino="iguazu">
+                    <img src="imagenes/iguazu2.jpg" width="450" height="350"  alt="cataratas">
+                    <h2>Cataratas de Iguazú</h2>
+                    <p>Las cataratas de Iguazú son 275 saltos en el río Iguazú, en el límite entre la provincia argentina Misiones y el estado brasileño Paraná.</p>
+                    <a href="HTML/iguazu.html" class="btn btn-rojo">Destino Iguazú</a>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="separador">
+            <div class="contenido-separador contenedor">
+                <h2>Viajes de ensueños para cambiar tu vida</h2>
+                <p>Aprovecha los mejores destinos que tenemos preparados para ti.</p>
+            </div>
+        </div>
+    
+        
+        <div class="pie-pagina ">
+            <div class="contenedor-piepagina contenedor">
+                <div class="info">
+                    <h3>Dirección</h3>
+                    <p><i class="fas fa-map-marker-alt"></i>  Av. del Libertador, Av. Casares y, Buenos Aires, Argentina</p>
+                    <p><i class="fas fa-map-marker-alt"></i>    34. Caracas-Venezuela 1080</p>
+
+                </div>
+                
+                <div class="info">
+                    <h3>Número de  contacto</h3>
+                    <i class="fa-solid fa-mobile-retro"> +54 11 70 53 90 02</i>
+                </div>
+                <div class="info">
+                    <h3>Horarios</h3>
+                    <p>Lunes - Viernes 8am - 5pm</p>
+                </div>
+                
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Todos los derechos reservados; 2024 Travel World, desarrollado por Anabelys Molina (grupo 14)</p>
+        </footer>
+
+    </main>
+   
+   <script src="JS/app.js"></script> 
+</body>
+</html>

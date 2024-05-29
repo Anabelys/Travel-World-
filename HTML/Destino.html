@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Destinos-Travel World</title>
+    <link rel="shortcut icon" href="../imagenes/senderismo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../CSS/destino.css">
+   <link rel="stylesheet" href="../CSS/normalize.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+  
+    <header class="encabezado">
+        <div class="contenedor-navegacion ">
+            <div class="contenido-navegacion contenedor">
+                <div class="header_logo">
+                    <a href="../index.html"><img src="../imagenes/senderismo.png" width="100" height="100" alt="logo">
+                    </a>
+                  </div>
+                <div class="logo">
+                    <h2> <span class="verde">TRAVEL</span> <span class="rojo">WORLD</span></h2>
+                </div>
+                <nav class="navegacion ocultar">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../HTML/Destino.html">Destinos</a>
+                    <a href="../HTML/Sobre_Nosotros.html">Sobre Nosotros</a>
+                    <a href="../HTML/Contacto.html">Contacto</a>
+                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main> 
+        <section class="destino">   
+            <h1 >Destinos</h1>
+            <article>
+                <p>En Travel World, te llevamos a explorar algunos de los destinos más exóticos y cautivadores del planeta. </p> 
+                <p>Aventúrate en la selva amazónica, donde la biodiversidad te dejará sin aliento y cada rincón es una maravilla natural. Descubre el impresionante glaciar Perito Moreno en El Calafate, un gigante de hielo que te sorprenderá con su magnificencia. Maravíllate con la majestuosa caída del Salto Ángel, la cascada más alta del mundo, situada en el corazón de la selva venezolana.</p>
+                <p>Explora las Misiones Jesuíticas en Argentina, un viaje al pasado colonial con un entorno natural inigualable. Y, por supuesto, no te pierdas las espectaculares Cataratas del Iguazú, una de las Siete Maravillas Naturales del Mundo, donde la fuerza de la naturaleza se despliega en todo su esplendor.</p> 
+                <p>Con Travel World, cada destino es una aventura única y emocionante. ¡Únete a nosotros y descubre lo extraordinario!</p>
+                <h2>Top de Destinos</h2>
+                    <div class="cont-destinos">
+                        <figure class="destinos">
+                            <img src="../imagenes/SaltoAngel.jpg" width="900" height="490" alt="salto angel">
+                            <a href="../HTML/Canaima.html"> <h5>Canaima</h5></a>
+                        </figure>
+
+                        <figure class="destinos">
+                            <img src="../imagenes/calafate8.jpg"   width="900" height="490" alt="calafate">
+                            <a href="../HTML/calafate.html"><h5>Calafate</h5></a>
+                        </figure>
+                        <figure class="destinos">
+                            <img src="../imagenes/03.jpg"  width="600" height="390" alt="cataratas">
+                            <a href="../HTML/iguazu.html" ><h5>Iguazú</h5></a>
+                        </figure>
+                        <figure class="destinos"    >
+                            <img src="../imagenes/image2.jpg"  width="600" height="390" alt="amazonas">
+                            <a href="../HTML/amazonas.html"><h5>Amazonas</h5></a>
+                        </figure>
+                    </div>
+            </article>
+        </section>
+
+    </main>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p><i class="fas fa-map-marker-alt"></i>  Av. del Libertador, Av. Casares y, Buenos Aires, Argentina</p>
+                <p><i class="fas fa-map-marker-alt"></i>34. Caracas-Venezuela 1080</p>
+            </div>
+            
+            <div class="info">
+                <h3>Número de  contacto</h3>
+                <i class="fa-solid fa-mobile-retro"> +54 11 70 53 90 02</i>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Lunes - Viernes 8am - 5pm</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados; 2024 Travel World, desarrollado por Anabelys Molina (grupo 14)</p>
+    </footer>
+
+    
+
+    
+    <script>
+        const menu = document.querySelector('.hamburguesa');
+        const navegacion = document.querySelector('.navegacion');
+        const imagenes = document.querySelectorAll('img');
+        const btnTodos = document.querySelector('.todos');
+        const btnCanaimas = document.querySelector('.canaimas');
+        const btnCalafate = document.querySelector('.calafate');
+        const btnAmazona = document.querySelector('.amazona');
+        const btnIguazus = document.querySelector('.iguazus');
+        const contenedorDestinos = document.querySelector('.destinos');
+        document.addEventListener('DOMContentLoaded',()=>{
+            eventos();
+        });
+
+        const eventos = () =>{
+            menu.addEventListener('click',abrirMenu);
+        }
+
+        const abrirMenu = () =>{
+            navegacion.classList.remove('ocultar');
+            botonCerrar();
+        }
+
+        const botonCerrar = () =>{
+            const btnCerrar = document.createElement('p');
+            const overlay  = document.createElement('div');
+            overlay.classList.add('pantalla-completa');
+            const body = document.querySelector('body');
+            if(document.querySelectorAll('.pantalla-completa').length > 0) return;
+            body.appendChild(overlay);
+            btnCerrar.textContent = 'x';
+            btnCerrar.classList.add('btn-cerrar');
+
+            // while(navegacion.children[5]){
+            //     navegacion.removeChild(navegacion.children[5]);
+            // }
+            navegacion.appendChild(btnCerrar);   
+            cerrarMenu(btnCerrar,overlay);
+            
+        }
+
+        const cerrarMenu = (boton, overlay) =>{
+            boton.addEventListener('click',()=>{
+                navegacion.classList.add('ocultar');
+                overlay.remove();
+                boton.remove();
+            });
+
+            overlay.onclick = function(){
+                overlay.remove();
+                navegacion.classList.add('ocultar');  
+                boton.remove();
+            }
+        }
+
+    </script>
+</body>
+</html>
